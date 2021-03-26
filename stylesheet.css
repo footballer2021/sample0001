@@ -1,0 +1,324 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+}
+
+header .header-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-wrapper .header-logo {
+  font-size: 36px;
+  padding-left: 20px;
+}
+
+header .header-wrapper .header-logo a {
+  color: black;
+  text-decoration: none;
+}
+
+header .header-wrapper .header-logo a:link, header .header-wrapper .header-logo a:visited, header .header-wrapper .header-logo a:hover, header .header-wrapper .header-logo a:active {
+  color: black;
+}
+
+header .header-wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 900px) {
+  header .header-wrapper nav {
+    display: none;
+  }
+}
+
+header .header-wrapper nav ul {
+  padding-left: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+}
+
+header .header-wrapper nav ul li {
+  list-style-type: none;
+  font-size: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .header-wrapper nav ul li:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+header .header-wrapper nav ul li a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header .header-wrapper nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin: 2px auto 0;
+  border-bottom: 1px solid black;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+header .header-wrapper nav ul li a:hover::after {
+  width: 100%;
+}
+
+header .header-wrapper nav ul li a:link, header .header-wrapper nav ul li a:visited, header .header-wrapper nav ul li a:hover, header .header-wrapper nav ul li a:active {
+  color: black;
+}
+
+header .header-wrapper nav ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+header .header-wrapper .nav-button {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header .header-wrapper .nav-button {
+    display: block;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    color: #2E5180;
+    margin-right: 20px;
+  }
+  header .header-wrapper .nav-button::before, header .header-wrapper .nav-button::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: currentColor;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  header .header-wrapper .nav-button::before {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: 0 6px currentColor;
+            box-shadow: 0 6px currentColor;
+  }
+  header .header-wrapper .nav-button .sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 700px;
+  background-image: url(img/shrine.JPG);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: colomn;
+          flex-direction: colomn;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: myanim 30s linear infinite;
+          animation: myanim 30s linear infinite;
+}
+
+@-webkit-keyframes myanim {
+  0% {
+    background-image: url(img/shrine.JPG);
+  }
+  16% {
+    background-image: url(img/shrine.JPG);
+  }
+  32% {
+    background-image: url(img/Yoshida-castle.JPG);
+  }
+  48% {
+    background-image: url(img/Yoshida-castle.JPG);
+  }
+  64% {
+    background-image: url(img/Toro-legacy.jpg);
+  }
+  80% {
+    background-image: url(img/Toro-legacy.jpg);
+  }
+}
+
+@keyframes myanim {
+  0% {
+    background-image: url(img/shrine.JPG);
+  }
+  16% {
+    background-image: url(img/shrine.JPG);
+  }
+  32% {
+    background-image: url(img/Yoshida-castle.JPG);
+  }
+  48% {
+    background-image: url(img/Yoshida-castle.JPG);
+  }
+  64% {
+    background-image: url(img/Toro-legacy.jpg);
+  }
+  80% {
+    background-image: url(img/Toro-legacy.jpg);
+  }
+}
+
+.hero .title-logo {
+  width: auto;
+}
+
+.hero .title-logo h1 {
+  color: white;
+  font-size: 80px;
+  text-shadow: 0 0 10px #444444;
+}
+
+@media (max-width: 900px) {
+  .hero .title-logo h1 {
+    font-size: 40px;
+  }
+}
+
+.activity {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.activity h1 {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #00a26f;
+}
+
+.activity h1::before, .activity h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 10px;
+  background: #89e0c4;
+}
+
+.activity-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 22px 20px;
+}
+
+.activity-wrapper article .work-image {
+  display: block;
+  width: 100%;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transform: translate(0, 45px);
+          transform: translate(0, 45px);
+  -webkit-transition: all 1500ms ease-out;
+  transition: all 1500ms ease-out;
+}
+
+.effect-scroll {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+/* ページTOPに戻る */
+.pagetop {
+  display: none;
+  position: fixed;
+  right: 15px;
+  bottom: 60px;
+}
+
+.pagetop a {
+  display: block;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #7db4e6;
+  border-radius: 50%;
+  line-height: 50px;
+}
+
+.pagetop a i {
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+}
+/*# sourceMappingURL=stylesheet.css.map */
