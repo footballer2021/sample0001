@@ -163,7 +163,7 @@ header .header-wrapper .nav-button {
 .hero {
   width: 100%;
   height: 700px;
-  background-image: url(img/shrine.JPG);
+  background-image: url(shrine.JPG);
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -185,43 +185,43 @@ header .header-wrapper .nav-button {
 
 @-webkit-keyframes myanim {
   0% {
-    background-image: url(img/shrine.JPG);
+    background-image: url(shrine.JPG);
   }
   16% {
-    background-image: url(img/shrine.JPG);
+    background-image: url(shrine.JPG);
   }
   32% {
-    background-image: url(img/Yoshida-castle.JPG);
+    background-image: url(Yoshida-castle.JPG);
   }
   48% {
-    background-image: url(img/Yoshida-castle.JPG);
+    background-image: url(Yoshida-castle.JPG);
   }
   64% {
-    background-image: url(img/Toro-legacy.jpg);
+    background-image: url(Toro-legacy.jpg);
   }
   80% {
-    background-image: url(img/Toro-legacy.jpg);
+    background-image: url(Toro-legacy.jpg);
   }
 }
 
 @keyframes myanim {
   0% {
-    background-image: url(img/shrine.JPG);
+    background-image: url(shrine.JPG);
   }
   16% {
-    background-image: url(img/shrine.JPG);
+    background-image: url(shrine.JPG);
   }
   32% {
-    background-image: url(img/Yoshida-castle.JPG);
+    background-image: url(Yoshida-castle.JPG);
   }
   48% {
-    background-image: url(img/Yoshida-castle.JPG);
+    background-image: url(Yoshida-castle.JPG);
   }
   64% {
-    background-image: url(img/Toro-legacy.jpg);
+    background-image: url(Toro-legacy.jpg);
   }
   80% {
-    background-image: url(img/Toro-legacy.jpg);
+    background-image: url(Toro-legacy.jpg);
   }
 }
 
