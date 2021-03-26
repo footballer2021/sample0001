@@ -303,6 +303,7 @@ header .header-wrapper .nav-button {
   position: fixed;
   right: 15px;
   bottom: 60px;
+  z-index: 1;
 }
 
 .pagetop a {
